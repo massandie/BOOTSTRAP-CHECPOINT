@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+*{
+    font-family: roboto slab;
+}
+
+/* Section d'accueil */
+.hero {
+    background-color: #e8f4ff;
+    padding: 100px 20px !important;
+}
+
+.hero h1 {
+    color: #0d47a1;
+    font-weight: bold;
+}
+
+/* Images des destinations */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Effet au survol */
+.card:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+/* Adaptation aux téléphones */
+@media (max-width: 576px) {
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}

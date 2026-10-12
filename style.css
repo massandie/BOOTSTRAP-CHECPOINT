@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* Style général */
+*{
+    font-family: roboto slab;
+    color: #333;
+}
+
+
+
+/* Section héros */
+.hero {
+    min-height: 600px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("font.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .lead{
+    color: white;
+    font-weight: 600;
+}
+
+/* Images des plats */
+.card-img-top {
+    height: 230px;
+    object-fit: cover;
+}
+
+/* Couleur des prix */
+.price {
+    color: #198754;
+    font-size: 1.2rem;
+}
+
+/* Animation des cartes */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+.container .mb-2{
+    color: white;
+    font-size: 0.8em;
+}
+
+/* Adaptation aux téléphones */
+@media (max-width: 576px) {
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}

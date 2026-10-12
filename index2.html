@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <title>Explore CI | Agence de voyage</title>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+
+            <a class="navbar-brand" href="#accueil">Voyage Facile ✈️</a>
+
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#accueil">Accueil</a>
+                <a class="nav-link" href="#destinations">Destinations</a>
+                <a class="nav-link" href="#voyages">Voyages</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- SECTION HERO -->
+    <header id="accueil" class="hero text-center p-5">
+        <div class="container">
+
+            <h1>Le monde vous attend !</h1>
+
+            <p>Découvrez de nouveaux endroits et créez de beaux souvenirs.</p>
+
+            <a href="#destinations" class="btn btn-primary">
+                Découvrir
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- DESTINATIONS -->
+    <section id="destinations" class="container py-5">
+
+        <h2 class="text-center mb-4">Nos destinations</h2>
+
+        <div class="row g-3">
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="ab1.jpeg"
+                         class="card-img-top" alt="Grande ville">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Abidjan</h5>
+                        <p class="card-text">
+                            Découvrez une ville dynamique et sa gastronomie.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="ass1.jpeg"
+                         class="card-img-top" alt="Plage ensoleillée">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Assinie</h5>
+                        <p class="card-text">
+                            Détendez-vous sur les plages et près des lagunes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="man1.jpeg"
+                         class="card-img-top" alt="Montagnes naturelles">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Man</h5>
+                        <p class="card-text">
+                            Explorez les montagnes et les cascades.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ACCORDÉON DES VOYAGES -->
+    <section id="voyages" class="container py-5">
+
+        <h2 class="text-center mb-4">Nos voyages</h2>
+
+        <div class="accordion" id="monAccordion">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#voyage1"
+                            aria-expanded="true"
+                            aria-controls="voyage1">
+                        Voyage à Abidjan
+                    </button>
+                </h2>
+
+                <div id="voyage1" class="accordion-collapse collapse show"
+                     data-bs-parent="#monAccordion">
+                    <div class="accordion-body">
+                        Visitez les quartiers et découvrez la culture locale.
+                        <a href="#contact">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#voyage2"
+                            aria-expanded="false"
+                            aria-controls="voyage2">
+                        Séjour à Assinie
+                    </button>
+                </h2>
+
+                <div id="voyage2" class="accordion-collapse collapse"
+                     data-bs-parent="#monAccordion">
+                    <div class="accordion-body">
+                        Profitez d'un séjour reposant au bord de l'océan.
+                        <a href="#contact">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="container py-5">
+
+        <h2 class="text-center mb-4">Contactez-nous</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="nom" class="form-label">Votre nom</label>
+                        <input type="text" id="nom" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Votre e-mail</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="destination" class="form-label">
+                            Destination souhaitée
+                        </label>
+
+                        <select id="destination" class="form-select" required>
+                            <option value="">Choisissez une destination</option>
+                            <option>Abidjan</option>
+                            <option>Assinie</option>
+                            <option>Man</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-control"
+                                  rows="3" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Envoyer
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PIED DE PAGE -->
+    <footer class="bg-primary text-white text-center p-3">
+        <p class="mb-0">
+            &copy; 2026 Voyage Facile | Tous droits réservés.
+        </p>
+    </footer>
+
+
+</body>
+</html>
