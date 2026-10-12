@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+
+    <title>Site de restaurant</title>
+  </head>
+  
+  <body>
+    <!-- 1. BARRE DE NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <img src="logo.jpeg" class="carousel-control-next-icon" alt="logo" />
+
+        <a class="navbar-brand fw-bold" href="#accueil"> Saveurs d'Afrique </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarRestaurant"
+          aria-controls="navbarRestaurant"
+          aria-expanded="false"
+          aria-label="Ouvrir le menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarRestaurant">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#accueil">Accueil</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#apropos">À propos de nous</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 2. SECTION HERO -->
+    <header id="accueil" class="hero d-flex align-items-center text-center">
+      <div class="container text-white">
+        <h1 class="display-3 fw-bold">Le goût authentique de l'Afrique</h1>
+
+        <p class="lead">
+          Découvrez des saveurs uniques dans une ambiance chaleureuse.
+        </p>
+
+        <a href="#menu" class="btn btn-warning btn-lg mt-3">
+          Découvrir notre menu
+        </a>
+      </div>
+    </header>
+
+    <!-- 3. SECTION MENU -->
+    <section id="menu" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-2">Notre menu</h2>
+        <p class="text-center text-muted mb-5">
+          Des plats délicieux préparés avec passion.
+        </p>
+
+        <div class="row g-4">
+          <!-- Plat 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="riz tchep.jpeg"
+                class="card-img-top"
+                alt="Plat de tchep"
+              />
+
+              <div class="card-body text-center">
+                <h5 class="card-title">Tchèp Sénégalais</h5>
+
+                <p class="card-text">
+                  Ce plat généreux se compose de riz cassé cuit dans un bouillon
+                  de tomate concentrée, de poisson frais farci d'un mélange
+                  d'herbes aromatiques (le rof), et de légumes variés cuits
+                  lentement
+                </p>
+
+                <p class="price fw-bold">3 000 FCFA</p>
+                <button class="btn btn-success w-80" type="submit">
+                  Commander
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plat 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="attieke poisson.jpeg"
+                class="card-img-top"
+                alt="attieke"
+              />
+
+              <div class="card-body text-center">
+                <h5 class="card-title">Attiéké Poisson Cap</h5>
+
+                <p class="card-text">
+                  Le poisson Cap (Capitaine) braisé ou frit, accompagné d'un
+                  attiéké bien frais, d'alloco et d'un assortiment de piments et
+                  de crudités, l'un des duos les plus prisés de la gastronomie
+                  ivoirienne.
+                </p>
+
+                <p class="price fw-bold">5 000 FCFA</p>
+                <button class="btn btn-success w-80" type="submit">
+                  Commander
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plat 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="foutou.jpeg" class="card-img-top" alt="foutou" />
+
+              <div class="card-body text-center">
+                <h5 class="card-title">Foutou Sauce Graine</h5>
+
+                <p class="card-text">
+                  L'un des plats les plus emblématiques de la cuisine
+                  ivoirienne. Ce plat de résistance traditionnel associe le
+                  foutou (une pâte dense et moelleuse faite de bananes plantains
+                  et de manioc, ou d'igname) à une sauce rouge onctueuse et
+                  parfumée, préparée à partir du jus de graines de palme.
+                </p>
+
+                <p class="price fw-bold">4 000 FCFA</p>
+                <button class="btn btn-success w-80" type="submit">
+                  Commander
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SECTION À PROPOS -->
+    <section id="apropos" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <!-- Colonne gauche : image -->
+          <div class="col-12 col-md-6">
+            <img
+              src="propos.jpeg"
+              class="img-fluid rounded shadow"
+              alt="fiche de description"
+            />
+          </div>
+
+          <!-- Colonne droite : texte -->
+          <div class="col-12 col-md-6">
+            <h2>À propos de nous</h2>
+
+            <p>
+              Bienvenue chez Saveurs d'Afrique, un restaurant qui célèbre la
+              richesse de la cuisine africaine.
+            </p>
+
+            <p>
+              Nous sélectionnons des ingrédients frais pour proposer des plats
+              savoureux dans un cadre convivial. Notre objectif est de faire de
+              chaque repas un moment de plaisir et de partage.
+            </p>
+
+            <a href="#contact" class="btn btn-success"> Contactez-nous </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SECTION CONTACT -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Contactez-nous</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <form>
+              <div class="mb-3">
+                <label for="nom" class="form-label"> Votre nom </label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nom"
+                  name="nom"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">
+                  Votre adresse e-mail
+                </label>
+
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label"> Votre message </label>
+
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-success w-100">
+                Envoyer
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PIED DE PAGE -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <p class="mb-2">@copy 2026 Saveurs d'Afrique. Tous droits réservés.</p>
+
+        <a href="https://www.facebook.com/?locale=fr_FR" target="_blank" class="text-white mx-2">Facebook</a>
+
+        <a href="https://www.instagram.com/?hl=fr" target="_blank" class="text-white mx-2"
+          >Instagram</a
+        >
+
+        <a
+          href="https://www.youtube.com/watch?v=QjBIKNRjE5U" target="_blank"
+          class="text-white mx-2"
+          >YouTube</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
